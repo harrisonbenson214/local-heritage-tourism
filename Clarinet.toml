@@ -1,0 +1,29 @@
+[project]
+name = 'local-heritage-tourism'
+description = ''
+authors = []
+telemetry = false
+cache_dir = './.cache'
+requirements = []
+[contracts.heritage-site-registry]
+path = 'contracts/heritage-site-registry.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.local-guide-certification]
+path = 'contracts/local-guide-certification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.tour-booking-system]
+path = 'contracts/tour-booking-system.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
